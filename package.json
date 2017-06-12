@@ -5,11 +5,18 @@
   "repository": "https://github.com/digitalqi/baseball-sim.git",
   "author": "Qi Ming He <qming.he@gmail.com>",
   "license": "MIT",
-  "scripts": { 
-    "start": "webpack-dev-server"
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "karma start --single-run --no-auto-watch"
   },
   "dependencies": {
     "html-webpack-plugin": "^2.28.0",
+    "jasmine": "^2.6.0",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-webpack": "^2.0.3",
     "path": "^0.12.7",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"

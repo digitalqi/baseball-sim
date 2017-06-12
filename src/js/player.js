@@ -50,11 +50,11 @@ export class Player {
     }
 
     set team(newTeam) {
-        this._team;
+        this._team = newTeam;
     }
 
     set position(newPosition) {
-        this._position;
+        this._position = newPosition;
     }
 
 }
