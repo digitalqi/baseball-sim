@@ -1,8 +1,6 @@
-import { randomNumberGenerator } from './randomNumberGenerator.js';
+import { randomNumberGenerator as rng } from './randomNumberGenerator.js';
 
 describe('RandomNumberGenerator', () => {
-
-    let rng = randomNumberGenerator; 
 
     it('should return a random integer between 0-10', () => {  
         let num = rng.getRandomInteger(0, 10);

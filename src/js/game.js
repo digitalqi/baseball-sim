@@ -1,4 +1,5 @@
 import * as positions from './constants/positions.js'; 
+import { randomNumberGenertor as rng } from './randomNumberGenerator.js';
 import { Pitcher } from './pitcher.js';
 
 let testPitcherData = {
@@ -16,3 +17,9 @@ let testPitcherData = {
 
 let testPitcher = new Pitcher(testPitcherData);
 testPitcher.throwPitch();
+
+function pitchBall() {
+    //should get control value from pitcher to determine the chance of throwing a strike
+    let control = rng.getRandomInteger(0, 1);
+    // testPitcher = throwPitch(control);
+};
